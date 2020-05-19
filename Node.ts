@@ -20,7 +20,12 @@ export default class Node<T extends Comparable<T>>{
      */
     public insert(item: T): boolean{
         let comparison: number = this.value.compareTo(item);
-        if(comparison==0) return false;
+        if(comparison==0) {
+            if(! this.hidden) return false;
+            this.value = item;
+            this.hidden = false;
+            return true;
+        }
         if(comparison<0) {
             if(this.left == null) {
                 this.left = new Node<T>(item, this);
@@ -89,53 +94,16 @@ export default class Node<T extends Comparable<T>>{
      */
     public removeByHash(hash: number): T{
         let element: Node<T> = this.findByHash(hash);
-        let value: T = element.value;
         if(element == null) return null;
-        if(element.left==null&&element.right==null){
-            //is a leaf so we just return the value and strip it from the tree.
-            if(element.parrent.left==element) element.parrent.left= null;
-            else element.parrent.right = null;
-            return value;
-        }
-        if(element.left==null) {
-            //only right sub tree exists
-            if(element.parrent.left==element) element.parrent.left= element.right;
-            else element.parrent.right = element.right;
-            return value;
-        }
-        if(element.right==null) {
-            //only left sub tree exists
-            if(element.parrent.left==element) element.parrent.left= element.left;
-            else element.parrent.right = element.left;
-            return value;
-        }
-        //both sub trees must exist.
-        if(element.parrent.left==element) element.parrent.left= element.left;
-        else element.parrent.right = element.left;
-        element.parrent.left.insertTree(element.right);
-        return value;
+        element.hidden = true;
+        return element.value;
     }
 
-    /**
-     * This inserts a tree but be carefull with this method.
-     * @param item the tree to be inserted.
-     */
-    protected insertTree(item: Node<T>): boolean{
-        let comparison: number = this.value.compareTo(item.value);
-        if(comparison==0) return false;
-        if(comparison<0) {
-            if(this.left == null) {
-                this.left = item;
-                item.parrent = this.left;
-                return true;
-            }
-            return this.left.insertTree(item);
-        }
-        if(this.right == null) {
-            this.right = item;
-            item.parrent = this.right;
-            return true;
-        }
-        return this.right.insertTree(item);
+    public toArray(): T[] {
+        let out: T[] = [this.value];
+        if(this.hidden) out = [];
+        if(this.left!==null) out = out.concat( this.left.toArray());
+        if(this.right!==null) out = this.right.toArray().concat(out);
+        return out;
     }
 }

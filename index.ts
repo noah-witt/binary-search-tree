@@ -66,4 +66,12 @@ export class bst<T extends Comparable<T>>{
         if(this.header.left==null) return null;
         return this.header.left.removeByHash(item.hashCode());
     }
+
+    /**
+     * @returns an array of the elements.
+     */
+    public toArray(): T[] {
+        if(this.header.left==null) return [];
+        return this.header.left.toArray();
+    }
 }

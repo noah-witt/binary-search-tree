@@ -64,5 +64,13 @@ class bst {
             return null;
         return this.header.left.removeByHash(item.hashCode());
     }
+    /**
+     * @returns an array of the elements.
+     */
+    toArray() {
+        if (this.header.left == null)
+            return [];
+        return this.header.left.toArray();
+    }
 }
 exports.bst = bst;

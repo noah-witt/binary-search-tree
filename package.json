@@ -13,7 +13,5 @@
     "mocha": "^7.1.2",
     "typescript": "^3.9.2"
   },
-  "dependencies": {
-    "flatted": "^2.0.2"
-  }
+  "dependencies": {}
 }
