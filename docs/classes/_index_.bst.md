@@ -36,7 +36,7 @@
 
 \+ **new bst**(): *[bst](_index_.bst.md)*
 
-*Defined in [index.ts:8](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L8)*
+*Defined in [index.ts:8](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L8)*
 
 **Returns:** *[bst](_index_.bst.md)*
 
@@ -46,7 +46,7 @@
 
 • **header**: *[Node](_node_.node.md)‹T›*
 
-*Defined in [index.ts:8](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L8)*
+*Defined in [index.ts:8](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L8)*
 
 only the left child of header should ever be used.
 
@@ -56,7 +56,7 @@ only the left child of header should ever be used.
 
 ▸ **contains**(`item`: T): *boolean*
 
-*Defined in [index.ts:29](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L29)*
+*Defined in [index.ts:29](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L29)*
 
 **Parameters:**
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **containsHash**(`item`: number): *boolean*
 
-*Defined in [index.ts:38](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L38)*
+*Defined in [index.ts:38](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L38)*
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ ___
 
 ▸ **getFromHash**(`hash`: number): *T*
 
-*Defined in [index.ts:47](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L47)*
+*Defined in [index.ts:47](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L47)*
 
 **Parameters:**
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **insert**(`item`: T): *boolean*
 
-*Defined in [index.ts:17](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L17)*
+*Defined in [index.ts:17](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L17)*
 
 **Parameters:**
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **remove**(`item`: T): *T*
 
-*Defined in [index.ts:65](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L65)*
+*Defined in [index.ts:65](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L65)*
 
 **Parameters:**
 
@@ -146,7 +146,7 @@ ___
 
 ▸ **removeByHash**(`hash`: number): *T*
 
-*Defined in [index.ts:56](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L56)*
+*Defined in [index.ts:56](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L56)*
 
 **Parameters:**
 
@@ -164,7 +164,7 @@ ___
 
 ▸ **toArray**(): *T[]*
 
-*Defined in [index.ts:73](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/index.ts#L73)*
+*Defined in [index.ts:73](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/index.ts#L73)*
 
 **Returns:** *T[]*
 

@@ -1,14 +1,8 @@
 # typescript binary search tree
+## By Noah Witt
 
-use it like this: 
-`{js} const bst = require("binary-search-tree");
-let tree = new bst.bst();
-tree.insert(new test(10));
-tree.insert(new test(1));
-tree.insert(new test(7));
-tree.insert(new test(8));
-tree.insert(new test(9));
-tree.insert(new test(11));
-tree.insert(new test(13));
-tree.insert(new test(15));
-tree.insert(new test(12)); `
+documentation in ["docs"](docs/globals.md)
+
+NPM: https://www.npmjs.com/package/@noahwitt/binary-search-tree
+github: https://github.com/noah-witt/binary-search-tree
+install by running `npm i --save @noahwitt/binary-search-tree`

@@ -25,7 +25,7 @@
 
 ▸ **compareTo**(`a`: T): *number*
 
-*Defined in [Comparable.ts:11](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/Comparable.ts#L11)*
+*Defined in [Comparable.ts:11](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/Comparable.ts#L11)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **compareToHash**(`a`: number): *number*
 
-*Defined in [Comparable.ts:14](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/Comparable.ts#L14)*
+*Defined in [Comparable.ts:14](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/Comparable.ts#L14)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **equals**(`a`: T): *boolean*
 
-*Defined in [Comparable.ts:17](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/Comparable.ts#L17)*
+*Defined in [Comparable.ts:17](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/Comparable.ts#L17)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **hashCode**(): *number*
 
-*Defined in [Comparable.ts:5](https://github.com/noah-witt/binary-search-tree/blob/477dd8c/Comparable.ts#L5)*
+*Defined in [Comparable.ts:5](https://github.com/noah-witt/binary-search-tree/blob/3e90ee6/Comparable.ts#L5)*
 
 return a unique number for this object.
 
