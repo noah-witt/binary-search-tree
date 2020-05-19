@@ -1,3 +1,7 @@
+[@noahwitt/binary-search-tree](README.md) › [Globals](globals.md)
+
+# @noahwitt/binary-search-tree
+
 # typescript binary search tree
 
 use it like this: 
