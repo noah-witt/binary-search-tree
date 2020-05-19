@@ -1,0 +1,19 @@
+{
+  "name": "binary-search-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Noah Witt",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "mocha": "^7.1.2",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "flatted": "^2.0.2"
+  }
+}
